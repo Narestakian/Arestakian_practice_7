@@ -7,6 +7,11 @@ public class Run {
         DrawingApp.startDrawing(circle);
         DrawingApp.startDrawing(rectangle);
         DrawingApp.startDrawing(triangle);
+
+        PaymentProcessor CreditCardProcessor = new CreditCardProcessor();
+        PaymentProcessor PayPalProcessor = new PayPalProcessor();
+        CreditCardProcessor.process(600.0);
+        PayPalProcessor.process(199.0);
     }
 
 }
