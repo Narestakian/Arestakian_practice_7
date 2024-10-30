@@ -7,6 +7,15 @@ public class Run {
         DrawingApp.startDrawing(circle);
         DrawingApp.startDrawing(rectangle);
         DrawingApp.startDrawing(triangle);
+
+        Notification SMSNotification = new SMSNotification();
+        Notification EmailNotification = new EmailNotification();
+
+        NotificationService.sendAlert(SMSNotification, " You have message!");
+        NotificationService.sendAlert(EmailNotification, " You have email!");
+
+
+
     }
 
 }
